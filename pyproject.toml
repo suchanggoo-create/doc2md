@@ -1,0 +1,28 @@
+ [project]
+ name = "doc2md"
+ version = "0.1.0"
+ description = "DOCX to Markdown converter with images and embedded attachments (OLE)"
+ readme = "README.md"
+ requires-python = ">=3.9"
+ dependencies = [
+   "lxml>=5.2.0",
+   "openpyxl>=3.1.0",
+ ]
+ 
+[project.optional-dependencies]
+test = [
+  "pytest>=8.0.0",
+]
+
+ [project.scripts]
+ doc2md = "doc2md.cli:main"
+ 
+ [build-system]
+ requires = ["setuptools>=68"]
+ build-backend = "setuptools.build_meta"
+ 
+ [tool.setuptools]
+ package-dir = {"" = "src"}
+ 
+ [tool.setuptools.packages.find]
+ where = ["src"]

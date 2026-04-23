@@ -1,0 +1,20 @@
+.DS_Store
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.venv/
+venv/
+
+# build artifacts
+dist/
+build/
+*.egg-info/
+
+# generated outputs
+out_*/
+
+# local samples (avoid publishing private docs)
+*.docx
+
