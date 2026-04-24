@@ -16,6 +16,7 @@ test = [
 
  [project.scripts]
  doc2md = "doc2md.cli:main"
+xlsx2md = "doc2md.excel_cli:main"
  
  [build-system]
  requires = ["setuptools>=68"]

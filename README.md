@@ -22,6 +22,18 @@ python -m pip install -e .
 doc2md "input.docx" --out "out_dir" --force
 ```
 
+#### Excel 单独转换（xlsx → md）
+
+当你只需要把 Excel（`.xlsx`）转为 Markdown 时，用 `xlsx2md`：
+
+```bash
+xlsx2md "input.xlsx" --out "output.md"
+```
+
+说明：
+- 默认不截断行数（输出全部行）
+- 输出使用 HTML `<table>`，并用 `rowspan/colspan` 保留合并单元格
+
 #### 参数说明
 - `--out <dir>`：输出目录（必填）
 - `--force`：若输出目录已存在则清空后重建（用于重复运行）
